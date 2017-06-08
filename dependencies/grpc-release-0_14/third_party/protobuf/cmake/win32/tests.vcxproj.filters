@@ -1,0 +1,490 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\any_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\arena_unittest.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\arenastring_unittest.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\compiler\command_line_interface_unittest.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\compiler\cpp\cpp_bootstrap_unittest.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\compiler\cpp\cpp_plugin_unittest.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\compiler\cpp\cpp_unittest.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\compiler\cpp\metadata_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\compiler\csharp\csharp_generator_unittest.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\compiler\importer_unittest.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\compiler\java\java_doc_comment_unittest.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\compiler\java\java_plugin_unittest.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\compiler\mock_code_generator.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\compiler\objectivec\objectivec_helpers_unittest.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\compiler\parser_unittest.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\compiler\python\python_plugin_unittest.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\compiler\ruby\ruby_generator_unittest.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\descriptor_database_unittest.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\descriptor_unittest.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\drop_unknown_fields_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\dynamic_message_unittest.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\extension_set_unittest.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\generated_message_reflection_unittest.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\io\coded_stream_unittest.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\io\printer_unittest.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\io\tokenizer_unittest.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\io\zero_copy_stream_unittest.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\map_field_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\map_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\message_unittest.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\no_field_presence_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\preserve_unknown_enum_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\proto3_arena_lite_unittest.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\proto3_arena_unittest.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\proto3_lite_unittest.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\reflection_ops_unittest.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\repeated_field_reflection_unittest.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\repeated_field_unittest.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\stubs\bytestream_unittest.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\stubs\common_unittest.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\stubs\int128_unittest.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\stubs\once_unittest.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\stubs\status_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\stubs\statusor_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\stubs\stringpiece_unittest.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\stubs\stringprintf_unittest.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\stubs\structurally_valid_unittest.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\stubs\strutil_unittest.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\stubs\template_util_unittest.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\stubs\time_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\stubs\type_traits_unittest.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\text_format_unittest.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\unknown_field_set_unittest.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\util\field_comparator_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\util\field_mask_util_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\util\internal\default_value_objectwriter_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\util\internal\json_objectwriter_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\util\internal\json_stream_parser_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\util\internal\protostream_objectsource_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\util\internal\protostream_objectwriter_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\util\internal\type_info_test_helper.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\util\json_util_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\util\message_differencer_unittest.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\util\time_util_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\util\type_resolver_util_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\well_known_types_unittest.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\wire_format_unittest.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\arena_test_util.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\map_test_util.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\test_util.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\testing\file.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\testing\googletest.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\any_test.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\compiler\cpp\cpp_test_bad_identifiers.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\compiler\cpp\cpp_test_large_enum_value.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\map_proto2_unittest.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\map_unittest.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\unittest.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\unittest_arena.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\unittest_custom_options.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\unittest_drop_unknown_fields.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\unittest_embed_optimize_for.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\unittest_empty.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\unittest_import.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\unittest_import_public.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\unittest_lite_imports_nonlite.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\unittest_mset.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\unittest_mset_wire_format.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\unittest_no_arena.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\unittest_no_arena_import.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\unittest_no_field_presence.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\unittest_no_generic_services.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\unittest_optimize_for.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\unittest_preserve_unknown_enum.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\unittest_preserve_unknown_enum2.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\unittest_proto3_arena.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\unittest_proto3_arena_lite.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\unittest_proto3_lite.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\unittest_well_known_types.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\util\internal\testdata\anys.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\util\internal\testdata\books.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\util\internal\testdata\default_value.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\util\internal\testdata\default_value_test.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\util\internal\testdata\field_mask.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\util\internal\testdata\maps.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\util\internal\testdata\oneofs.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\util\internal\testdata\struct.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\util\internal\testdata\timestamp_duration.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\util\json_format_proto3.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\util\message_differencer_unittest.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\map_lite_unittest.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\unittest_import_lite.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\unittest_import_public_lite.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\unittest_lite.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\src\google\protobuf\unittest_no_arena_lite.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\cmake\CMakeLists.txt" />
+    <CustomBuild Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\cmake\win32\CMakeFiles\93cdb6bddf4f5b1bc8c85ae614bd3745\any_test.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\cmake\win32\CMakeFiles\b35840e657cdab177d59842238c84dcb\cpp_test_bad_identifiers.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\cmake\win32\CMakeFiles\b35840e657cdab177d59842238c84dcb\cpp_test_large_enum_value.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\cmake\win32\CMakeFiles\93cdb6bddf4f5b1bc8c85ae614bd3745\map_proto2_unittest.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\cmake\win32\CMakeFiles\93cdb6bddf4f5b1bc8c85ae614bd3745\map_unittest.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\cmake\win32\CMakeFiles\93cdb6bddf4f5b1bc8c85ae614bd3745\unittest.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\cmake\win32\CMakeFiles\93cdb6bddf4f5b1bc8c85ae614bd3745\unittest_arena.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\cmake\win32\CMakeFiles\93cdb6bddf4f5b1bc8c85ae614bd3745\unittest_custom_options.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\cmake\win32\CMakeFiles\93cdb6bddf4f5b1bc8c85ae614bd3745\unittest_drop_unknown_fields.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\cmake\win32\CMakeFiles\93cdb6bddf4f5b1bc8c85ae614bd3745\unittest_embed_optimize_for.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\cmake\win32\CMakeFiles\93cdb6bddf4f5b1bc8c85ae614bd3745\unittest_empty.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\cmake\win32\CMakeFiles\93cdb6bddf4f5b1bc8c85ae614bd3745\unittest_import.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\cmake\win32\CMakeFiles\93cdb6bddf4f5b1bc8c85ae614bd3745\unittest_import_public.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\cmake\win32\CMakeFiles\93cdb6bddf4f5b1bc8c85ae614bd3745\unittest_lite_imports_nonlite.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\cmake\win32\CMakeFiles\93cdb6bddf4f5b1bc8c85ae614bd3745\unittest_mset.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\cmake\win32\CMakeFiles\93cdb6bddf4f5b1bc8c85ae614bd3745\unittest_mset_wire_format.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\cmake\win32\CMakeFiles\93cdb6bddf4f5b1bc8c85ae614bd3745\unittest_no_arena.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\cmake\win32\CMakeFiles\93cdb6bddf4f5b1bc8c85ae614bd3745\unittest_no_arena_import.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\cmake\win32\CMakeFiles\93cdb6bddf4f5b1bc8c85ae614bd3745\unittest_no_field_presence.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\cmake\win32\CMakeFiles\93cdb6bddf4f5b1bc8c85ae614bd3745\unittest_no_generic_services.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\cmake\win32\CMakeFiles\93cdb6bddf4f5b1bc8c85ae614bd3745\unittest_optimize_for.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\cmake\win32\CMakeFiles\93cdb6bddf4f5b1bc8c85ae614bd3745\unittest_preserve_unknown_enum.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\cmake\win32\CMakeFiles\93cdb6bddf4f5b1bc8c85ae614bd3745\unittest_preserve_unknown_enum2.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\cmake\win32\CMakeFiles\93cdb6bddf4f5b1bc8c85ae614bd3745\unittest_proto3_arena.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\cmake\win32\CMakeFiles\93cdb6bddf4f5b1bc8c85ae614bd3745\unittest_proto3_arena_lite.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\cmake\win32\CMakeFiles\93cdb6bddf4f5b1bc8c85ae614bd3745\unittest_proto3_lite.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\cmake\win32\CMakeFiles\93cdb6bddf4f5b1bc8c85ae614bd3745\unittest_well_known_types.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\cmake\win32\CMakeFiles\ecf15848bc8023fbd1a4e8dbdfbe4d2f\anys.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\cmake\win32\CMakeFiles\ecf15848bc8023fbd1a4e8dbdfbe4d2f\books.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\cmake\win32\CMakeFiles\ecf15848bc8023fbd1a4e8dbdfbe4d2f\default_value.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\cmake\win32\CMakeFiles\ecf15848bc8023fbd1a4e8dbdfbe4d2f\default_value_test.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\cmake\win32\CMakeFiles\ecf15848bc8023fbd1a4e8dbdfbe4d2f\field_mask.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\cmake\win32\CMakeFiles\ecf15848bc8023fbd1a4e8dbdfbe4d2f\maps.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\cmake\win32\CMakeFiles\ecf15848bc8023fbd1a4e8dbdfbe4d2f\oneofs.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\cmake\win32\CMakeFiles\ecf15848bc8023fbd1a4e8dbdfbe4d2f\struct.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\cmake\win32\CMakeFiles\ecf15848bc8023fbd1a4e8dbdfbe4d2f\timestamp_duration.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\cmake\win32\CMakeFiles\21ddaf193f0560e7ad625b24ed6da7c1\json_format_proto3.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\cmake\win32\CMakeFiles\21ddaf193f0560e7ad625b24ed6da7c1\message_differencer_unittest.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\cmake\win32\CMakeFiles\93cdb6bddf4f5b1bc8c85ae614bd3745\map_lite_unittest.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\cmake\win32\CMakeFiles\93cdb6bddf4f5b1bc8c85ae614bd3745\unittest_import_lite.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\cmake\win32\CMakeFiles\93cdb6bddf4f5b1bc8c85ae614bd3745\unittest_import_public_lite.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\cmake\win32\CMakeFiles\93cdb6bddf4f5b1bc8c85ae614bd3745\unittest_lite.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="F:\DeepLin\GeLinProject\dependencies\grpc-release-0_14\third_party\protobuf\cmake\win32\CMakeFiles\93cdb6bddf4f5b1bc8c85ae614bd3745\unittest_no_arena_lite.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{1EE50059-84F4-3A5D-96E7-D3A6A614A11C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{7C26B641-7CC9-3FBB-BECA-FD93686FCA38}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
