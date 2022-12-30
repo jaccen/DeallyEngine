@@ -2,7 +2,7 @@
 #  Author: jiaxiaobo
 #
 
-cmake_minimum_required(VERSION 2.8)
+cmake_minimum_required(VERSION 3.1)
 
 project (Engine)
 
@@ -100,5 +100,6 @@ ENDIF ()
 include_directories(${ENGINE_INCLUDES})
 
 add_subdirectory( ${CMAKE_CURRENT_SOURCE_DIR}/src )
+add_subdirectory(editor)
 set_property(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR} PROPERTY VS_STARTUP_PROJECT game)
 
