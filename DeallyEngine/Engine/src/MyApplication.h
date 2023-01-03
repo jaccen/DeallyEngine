@@ -6,13 +6,13 @@
 #include "Shader.h"
 
 class MyApplication : public Application {
- public:
+public:
   MyApplication();
 
- protected:
+protected:
   virtual void loop();
 
- private:
+private:
   const int size = 100;
 
   // shader
@@ -28,4 +28,4 @@ class MyApplication : public Application {
   GLuint vao, vbo, ibo;
 };
 
-#endif  
+#endif

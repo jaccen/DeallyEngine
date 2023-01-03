@@ -1,5 +1,5 @@
 #ifndef APPLICATION_H
-#define APPLICATION_H  
+#define APPLICATION_H
 #include <string>
 
 struct GLFWwindow;
@@ -14,13 +14,13 @@ struct GLFWwindow;
 ///   * windowDimensionChanged()
 /// * let the user define the "loop" function.
 class Application {
- public:
+public:
   Application();
 
-  static Application& getInstance();
+  static Application &getInstance();
 
   // get the window id
-  GLFWwindow* getWindow() const;
+  GLFWwindow *getWindow() const;
 
   // window control
   void exit();
@@ -39,14 +39,14 @@ class Application {
   float getWindowRatio();
   bool windowDimensionChanged();
 
- private:
+private:
   enum State { stateReady, stateRun, stateExit };
 
   State state;
 
-  Application& operator=(const Application&) { return *this; }
+  Application &operator=(const Application &) { return *this; }
 
-  GLFWwindow* window;
+  GLFWwindow *window;
 
   // Time:
   float time;
@@ -58,8 +58,8 @@ class Application {
   bool dimensionChanged;
   void detectWindowDimensionChange();
 
- protected:
-  Application(const Application&){};
+protected:
+  Application(const Application &){};
 
   std::string title;
 

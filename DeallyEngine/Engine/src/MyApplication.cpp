@@ -39,8 +39,7 @@ VertexType getHeightMap(const glm::vec2 position) {
 }
 
 MyApplication::MyApplication()
-    : Application(),
-      vertexShader(SHADER_DIR "/shader.vert", GL_VERTEX_SHADER),
+    : Application(), vertexShader(SHADER_DIR "/shader.vert", GL_VERTEX_SHADER),
       fragmentShader(SHADER_DIR "/shader.frag", GL_FRAGMENT_SHADER),
       shaderProgram({vertexShader, fragmentShader}) {
   glCheckError(__FILE__, __LINE__);
@@ -139,10 +138,10 @@ void MyApplication::loop() {
   glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, ibo);
 
   glCheckError(__FILE__, __LINE__);
-  glDrawElements(GL_TRIANGLES,         // mode
-                 size * size * 2 * 3,  // count
-                 GL_UNSIGNED_INT,      // type
-                 NULL                  // element array buffer offset
+  glDrawElements(GL_TRIANGLES,        // mode
+                 size * size * 2 * 3, // count
+                 GL_UNSIGNED_INT,     // type
+                 NULL                 // element array buffer offset
   );
 
   glBindVertexArray(0);

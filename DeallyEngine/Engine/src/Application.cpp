@@ -1,6 +1,5 @@
 #include "Application.h"
 
-
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
 #include <functional>
@@ -8,19 +7,18 @@
 #include <stdexcept>
 
 #ifdef __EMSCRIPTEN__
-#include <emscripten.h> 
-#include <emscripten/html5.h>
 #include <cmath>
+#include <emscripten.h>
+#include <emscripten/html5.h>
+
 #endif
 
 std::function<void()> registered_loop;
-void loop_iteration() {
-	registered_loop();
-}
+void loop_iteration() { registered_loop(); }
 
-Application* currentApplication = NULL;
+Application *currentApplication = NULL;
 
-Application& Application::getInstance() {
+Application &Application::getInstance() {
   if (currentApplication)
     return *currentApplication;
   else
@@ -40,16 +38,16 @@ Application::Application()
 
   // setting the opengl version
 #ifdef __EMSCRIPTEN__
-	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
-	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 0);
+  glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
+  glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 0);
 #else
-	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
-	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 2);
-	glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
-	glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
+  glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
+  glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 2);
+  glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
+  glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 #endif
 
-	glfwWindowHint(GLFW_RESIZABLE, GL_TRUE);
+  glfwWindowHint(GLFW_RESIZABLE, GL_TRUE);
 
   // create the window
   window = glfwCreateWindow(width, height, title.c_str(), NULL, NULL);
@@ -66,35 +64,27 @@ Application::Application()
   if (err != GLEW_OK) {
     glfwTerminate();
     throw std::runtime_error(std::string("Could initialize GLEW, error = ") +
-                             (const char*)glewGetErrorString(err));
+                             (const char *)glewGetErrorString(err));
   }
 
   // get version info
-  const GLubyte* renderer = glGetString(GL_RENDERER);
-  const GLubyte* version = glGetString(GL_VERSION);
+  const GLubyte *renderer = glGetString(GL_RENDERER);
+  const GLubyte *version = glGetString(GL_VERSION);
   std::cout << "Renderer: " << renderer << std::endl;
   std::cout << "OpenGL version supported " << version << std::endl;
 
   // opengl configuration
-  glEnable(GL_DEPTH_TEST);  // enable depth-testing
-  glDepthFunc(GL_LESS);  // depth-testing interprets a smaller value as "closer"
+  glEnable(GL_DEPTH_TEST); // enable depth-testing
+  glDepthFunc(GL_LESS); // depth-testing interprets a smaller value as "closer"
 }
 
-GLFWwindow* Application::getWindow() const {
-  return window;
-}
+GLFWwindow *Application::getWindow() const { return window; }
 
-void Application::exit() {
-  state = stateExit;
-}
+void Application::exit() { state = stateExit; }
 
-float Application::getFrameDeltaTime() const {
-  return deltaTime;
-}
+float Application::getFrameDeltaTime() const { return deltaTime; }
 
-float Application::getTime() const {
-  return time;
-}
+float Application::getTime() const { return time; }
 
 void Application::run() {
   state = stateRun;
@@ -104,7 +94,7 @@ void Application::run() {
 
   time = glfwGetTime();
 
-	registered_loop =  [&]() {
+  registered_loop = [&]() {
     // compute new time and delta time
     float t = glfwGetTime();
     deltaTime = t - time;
@@ -121,14 +111,14 @@ void Application::run() {
 
     // Pool and process events
     glfwPollEvents();
-	};
+  };
 
 #ifdef __EMSCRIPTEN__
   emscripten_set_main_loop(loop_iteration, 0, 1);
 #else
   while (state == stateRun) {
     loop_iteration();
-	}
+  }
   glfwTerminate();
 #endif
 }
@@ -146,18 +136,10 @@ void Application::detectWindowDimensionChange() {
   glViewport(0, 0, width, height);
 }
 
-int Application::getWidth() {
-  return width;
-}
+int Application::getWidth() { return width; }
 
-int Application::getHeight() {
-  return height;
-}
+int Application::getHeight() { return height; }
 
-float Application::getWindowRatio() {
-  return float(width) / float(height);
-}
+float Application::getWindowRatio() { return float(width) / float(height); }
 
-bool Application::windowDimensionChanged() {
-  return dimensionChanged;
-}
+bool Application::windowDimensionChanged() { return dimensionChanged; }
