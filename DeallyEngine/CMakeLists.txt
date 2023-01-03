@@ -6,100 +6,61 @@ cmake_minimum_required(VERSION 3.1)
 
 project (Engine)
 
-set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
-set(ROOT_DIR ${CMAKE_CURRENT_SOURCE_DIR} CACHE STRING "Root dir")
+# The engine executable
+add_executable(Engine
+Engine/src/Application.cpp
+Engine/src/Application.cpp
+Engine/src/MyApplication.cpp
+Engine/src/MyApplication.cpp
+Engine/src/glError.h
+Engine/src/glError.cpp
+Engine/src/main.cpp
+Engine/src/Shader.h
+Engine/src/Shader.cpp
+)
 
-set(CP_CMAKE_DIR ${PROJECT_SOURCE_DIR}/cmake)
-include(cotire)
-include(${CP_CMAKE_DIR}/macros.cmake)
+if (EMSCRIPTEN)
+  target_link_libraries(Engine PUBLIC "-s USE_GLFW=3")
+  target_link_libraries(Engine PUBLIC "-s USE_WEBGL2=1")
+  target_link_libraries(Engine PUBLIC "-s WASM=1")
 
-IF (ANDROID)
-  include(${CP_CMAKE_DIR}/android.cmake)
-ENDIF ()
+  # Copy the index.html file.
+  foreach(file "index.html" "run_webassembly.py")
+    configure_file(src/${file} ${file})
+  endforeach(file)
 
-set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
-set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
+  foreach(file "shader/shader.frag" "shader/shader.vert")
+    configure_file(${file} ${file})
+  endforeach(file)
 
-LINK_DIRECTORIES(${CMAKE_BINARY_DIR}/lib)
+  # Allow the directories /shader and /data to be fetched by the web browser.
+  set_property(TARGET Engine APPEND_STRING PROPERTY LINK_FLAGS
+    "--preload-file ${CMAKE_CURRENT_BINARY_DIR}/shader/@/shader/")
+  
+else() # Not Web
 
-add_subdirectory(Thirdparty)
+  # glfw
+  add_subdirectory(Thirdparty/glfw EXCLUDE_FROM_ALL)
+  target_link_libraries(Engine PRIVATE glfw)
 
-set ( GLFW_INCLUDE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/Thirdparty/GLFW/include )
-set ( GLFW_LIBRARY glfw3 )
+  # glew
+  add_definitions(-DGLEW_STATIC)
+  add_subdirectory(Thirdparty/glew EXCLUDE_FROM_ALL)
+  target_link_libraries(Engine PRIVATE libglew_static)
 
-set ( GLEW_INCLUDE_DIRS ${CMAKE_CURRENT_SOURCE_DIR}/Thirdparty/glew/include )
-set ( GLEW_LIBRARIES libglew_shared )
+endif()
 
-set ( GLM_INCLUDE_DIRS ${CMAKE_CURRENT_SOURCE_DIR}/Thirdparty/glm/ )
+# glm
+add_subdirectory(Thirdparty/glm EXCLUDE_FROM_ALL)
+target_link_libraries(Engine PRIVATE glm)
 
-#set ( WHEREAMI_INCLUDE_DIRS ${CMAKE_CURRENT_SOURCE_DIR}/Thirdparty/whereami/src/ )
-#set ( WHEREAMI_LIBRARY whereami )
+configure_file(
+  ${CMAKE_CURRENT_SOURCE_DIR}/Engine/src/asset.h.in
+  ${CMAKE_CURRENT_BINARY_DIR}/Engine/src/asset.h
+)
+target_include_directories(Engine
+  PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/Engine/src
+  PRIVATE ${CMAKE_CURRENT_BINARY_DIR}/Engine/src
+)
 
-set ( IMGUI_INCLUDE_DIRS ${CMAKE_CURRENT_SOURCE_DIR}/Thirdparty/imgui/ )
-set ( IMGUI_LIBRARY imgui )
-
-#set ( FRETYPE_INCLUDE_DIRS ${CMAKE_CURRENT_SOURCE_DIR}/Thirdparty/freetype/ )
-#set ( FRETYPE_LIBRARY freetype)
-IF (EMSCRIPTEN)
-  add_definitions( -DGLES2=1 )
-
-  SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g -Wall --preload-file ${CMAKE_CURRENT_SOURCE_DIR}/src/example/assets/ -s TOTAL_MEMORY=38000000 -s USE_SDL=2 -std=c++1y")
-  add_definitions(-DASSET_DIR="${CMAKE_CURRENT_SOURCE_DIR}/src/example/assets/")
-
-  set(ENGINE_LIBS
-    ${ASSIMP_LIBRARY}
-    ${IMGUI_LIBRARY}
-  )
-
-  set(ENGINE_INCLUDES
-    ${GLM_INCLUDE_DIRS}
-    ${ASSIMP_INCLUDE_DIR}
-    ${IMGUI_INCLUDE_DIRS}
-    ${CMAKE_CURRENT_SOURCE_DIR}/src/engine/
-  )
-ELSEIF (ANDROID)
- add_definitions( -DGLES2=1 )
-  SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++1y")
-
-  set(ENGINE_LIBS
-    ${SDL2_LIBRARY}
-    ${ASSIMP_LIBRARY}
-    ${IMGUI_LIBRARY}
-  )
-
-  set(ENGINE_INCLUDES
-    ${SDL2_INCLUDE_DIR}
-    ${GLM_INCLUDE_DIRS}
-    ${ASSIMP_INCLUDE_DIR}
-    ${IMGUI_INCLUDE_DIRS}
-    ${CMAKE_CURRENT_SOURCE_DIR}/src/engine/
-  )
-ELSE ()
-  SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g -Wall -std=c++1y")
-  find_package(OpenGL REQUIRED)
-
-  set(ENGINE_LIBS
-    ${OPENGL_LIBRARY}
-    ${GLFW_LIBRARY}
-    ${GLEW_LIBRARIES}
-    ${IMGUI_LIBRARY}
-   # ${FRETYPE_LIBRARY}
-  )
-
-  set(ENGINE_INCLUDES
-    ${GLFW_INCLUDE_DIR}
-    ${GLM_INCLUDE_DIRS}
-    ${GLEW_INCLUDE_DIRS}
-    ${IMGUI_INCLUDE_DIRS}
-    #${FRETYPE_INCLUDE_DIRS}
-    ${CMAKE_CURRENT_SOURCE_DIR}/src/engine/
-  )
-
-ENDIF ()
-include_directories(${ENGINE_INCLUDES})
-
-add_subdirectory( ${CMAKE_CURRENT_SOURCE_DIR}/src )
-add_subdirectory(editor)
-set_property(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR} PROPERTY VS_STARTUP_PROJECT game)
 

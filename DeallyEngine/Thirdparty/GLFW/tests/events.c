@@ -244,6 +244,10 @@ static const char* get_mods_name(int mods)
         strcat(name, " alt");
     if (mods & GLFW_MOD_SUPER)
         strcat(name, " super");
+    if (mods & GLFW_MOD_CAPS_LOCK)
+        strcat(name, " capslock-on");
+    if (mods & GLFW_MOD_NUM_LOCK)
+        strcat(name, " numlock-on");
 
     return name;
 }
@@ -285,8 +289,13 @@ static void framebuffer_size_callback(GLFWwindow* window, int width, int height)
     Slot* slot = glfwGetWindowUserPointer(window);
     printf("%08x to %i at %0.3f: Framebuffer size: %i %i\n",
            counter++, slot->number, glfwGetTime(), width, height);
+}
 
-    glViewport(0, 0, width, height);
+static void window_content_scale_callback(GLFWwindow* window, float xscale, float yscale)
+{
+    Slot* slot = glfwGetWindowUserPointer(window);
+    printf("%08x to %i at %0.3f: Window content scale: %0.3f %0.3f\n",
+           counter++, slot->number, glfwGetTime(), xscale, yscale);
 }
 
 static void window_close_callback(GLFWwindow* window)
@@ -400,6 +409,15 @@ static void key_callback(GLFWwindow* window, int key, int scancode, int action, 
             printf("(( closing %s ))\n", slot->closeable ? "enabled" : "disabled");
             break;
         }
+
+        case GLFW_KEY_L:
+        {
+            const int state = glfwGetInputMode(window, GLFW_LOCK_KEY_MODS);
+            glfwSetInputMode(window, GLFW_LOCK_KEY_MODS, !state);
+
+            printf("(( lock key mods %s ))\n", !state ? "enabled" : "disabled");
+            break;
+        }
     }
 }
 
@@ -409,15 +427,6 @@ static void char_callback(GLFWwindow* window, unsigned int codepoint)
     printf("%08x to %i at %0.3f: Character 0x%08x (%s) input\n",
            counter++, slot->number, glfwGetTime(), codepoint,
            get_character_string(codepoint));
-}
-
-static void char_mods_callback(GLFWwindow* window, unsigned int codepoint, int mods)
-{
-    Slot* slot = glfwGetWindowUserPointer(window);
-    printf("%08x to %i at %0.3f: Character 0x%08x (%s) with modifiers (with%s) input\n",
-            counter++, slot->number, glfwGetTime(), codepoint,
-            get_character_string(codepoint),
-            get_mods_name(mods));
 }
 
 static void drop_callback(GLFWwindow* window, int count, const char** paths)
@@ -515,7 +524,7 @@ int main(int argc, char** argv)
                 break;
 
             case 'n':
-                count = (int) strtol(optarg, NULL, 10);
+                count = (int) strtoul(optarg, NULL, 10);
                 break;
 
             default:
@@ -540,12 +549,6 @@ int main(int argc, char** argv)
     {
         width  = 640;
         height = 480;
-    }
-
-    if (!count)
-    {
-        fprintf(stderr, "Invalid user\n");
-        exit(EXIT_FAILURE);
     }
 
     slots = calloc(count, sizeof(Slot));
@@ -586,6 +589,7 @@ int main(int argc, char** argv)
         glfwSetWindowPosCallback(slots[i].window, window_pos_callback);
         glfwSetWindowSizeCallback(slots[i].window, window_size_callback);
         glfwSetFramebufferSizeCallback(slots[i].window, framebuffer_size_callback);
+        glfwSetWindowContentScaleCallback(slots[i].window, window_content_scale_callback);
         glfwSetWindowCloseCallback(slots[i].window, window_close_callback);
         glfwSetWindowRefreshCallback(slots[i].window, window_refresh_callback);
         glfwSetWindowFocusCallback(slots[i].window, window_focus_callback);
@@ -597,7 +601,6 @@ int main(int argc, char** argv)
         glfwSetScrollCallback(slots[i].window, scroll_callback);
         glfwSetKeyCallback(slots[i].window, key_callback);
         glfwSetCharCallback(slots[i].window, char_callback);
-        glfwSetCharModsCallback(slots[i].window, char_mods_callback);
         glfwSetDropCallback(slots[i].window, drop_callback);
 
         glfwMakeContextCurrent(slots[i].window);

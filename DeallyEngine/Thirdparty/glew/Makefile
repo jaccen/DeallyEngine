@@ -98,7 +98,12 @@ LIB.OBJS           := $(LIB.OBJS:.c=.o)
 LIB.SOBJS          := $(addprefix tmp/$(SYSTEM)/default/shared/,$(LIB.SRCS.NAMES))
 LIB.SOBJS          := $(LIB.SOBJS:.c=.o)
 
-glew.lib: lib lib/$(LIB.SHARED) lib/$(LIB.STATIC) glew.pc
+glew.lib: glew.lib.shared glew.lib.static
+
+glew.lib.shared: lib lib/$(LIB.SHARED) glew.pc
+glew.lib.static: lib lib/$(LIB.STATIC) glew.pc
+
+.PHONY: glew.lib glew.lib.shared glew.lib.static
 
 lib:
 	mkdir lib
@@ -287,11 +292,15 @@ dist-src:
 	mkdir -p $(DIST_DIR)/lib
 	cp -a auto $(DIST_DIR)
 	$(RM) -Rf $(DIST_DIR)/auto/registry
+	$(RM) -Rf $(DIST_DIR)/auto/glfixes
+	$(RM) -Rf $(DIST_DIR)/auto/OpenGL-Registry
+	$(RM) -Rf $(DIST_DIR)/auto/EGL-Registry
 	cp -a build $(DIST_DIR)
 	cp -a config $(DIST_DIR)
 	cp -a src $(DIST_DIR)
 	cp -a doc $(DIST_DIR)
 	cp -a include $(DIST_DIR)
+	cp -a *.md $(DIST_DIR)
 	cp -a *.txt $(DIST_DIR)
 	cp -a Makefile $(DIST_DIR)
 	cp -a glew.pc.in $(DIST_DIR)
@@ -307,6 +316,7 @@ dist-src:
 	$(UNIX2DOS) $(DIST_DIR)/auto/extensions/*
 	find $(DIST_DIR) -name '*.h' | xargs $(UNIX2DOS)
 	find $(DIST_DIR) -name '*.c' | xargs $(UNIX2DOS)
+	find $(DIST_DIR) -name '*.md' | xargs $(UNIX2DOS)
 	find $(DIST_DIR) -name '*.txt' | xargs $(UNIX2DOS)
 	find $(DIST_DIR) -name '*.html' | xargs $(UNIX2DOS)
 	find $(DIST_DIR) -name '*.css' | xargs $(UNIX2DOS)
@@ -325,6 +335,7 @@ dist-src:
 	$(DOS2UNIX) $(DIST_DIR)/auto/extensions/*
 	find $(DIST_DIR) -name '*.h' | xargs $(DOS2UNIX)
 	find $(DIST_DIR) -name '*.c' | xargs $(DOS2UNIX)
+	find $(DIST_DIR) -name '*.md' | xargs $(DOS2UNIX)
 	find $(DIST_DIR) -name '*.txt' | xargs $(DOS2UNIX)
 	find $(DIST_DIR) -name '*.html' | xargs $(DOS2UNIX)
 	find $(DIST_DIR) -name '*.css' | xargs $(DOS2UNIX)

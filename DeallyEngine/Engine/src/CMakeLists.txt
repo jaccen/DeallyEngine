@@ -1,5 +1,5 @@
 #
-#  Author: Shervin Aflatooni
+#  Author: jaccen
 #
 
 set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS TRUE)
