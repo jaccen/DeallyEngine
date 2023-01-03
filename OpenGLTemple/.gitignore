@@ -1,0 +1,13 @@
+/*
+!CMakeLists.txt
+!.gitignore
+!.gitmodules
+!src/
+!res/
+!include/
+!lib/
+!doc/
+!README.md
+res/_records
+res/_preferences
+lib/imgui/src/imgui_demo.cpp
