@@ -63,3 +63,15 @@ NeRF in the Dark (RawNeRF)
 ​bmild.github.io/rawnerf/index.html
 
 论文链接：https://arxiv.org/abs/2111.13679
+
+# 
+
+#nerf人脸重建：
+1、MobileR2L算法论文(论文链接参考)，
+https://snap-research.github.io/MobileR2L/
+2、将RAD-nerf中的语音提取模型从deepspeech替换为wav2vec 2模型，在40s左右的训练视频上，效果和deepspeech类似，对于中文的驱动效果不是很好。使用更长的训练视频（2~3分钟），wav2vec2的语音驱动效果更好，推理速度V100上15~20fps。使用3DMM表情系数驱动RAD-nerf，驱动结果嘴型抖动较大，效果相对nerfblendshape略差
+3、rad-nerf，语音驱动的nerf人脸重建算法，该算法能实现V100上20fps的推理速度，且驱动效果较好。问题是目前由于容器无法联网，只能使用较早版本的deepspeech提取语音特征，可能影响语音特征提取的效果。
+4、hyper-nerf算法，将表情系数与hyper-nerf结合，数据集上实验效果相比nerfblendshape略差，比基于instant-ngp的baseline算法略好
+5、基于Mesh人脸重建
+      腾讯hifi3d算法：配置环境，用论文中数据集跑通代码流程，运行了人脸重建，基本达到论文中所提效果
+      基于instant-ngp和blendshape表情系数的人脸重建算法，并进行若干改进调优：基于概率的光线采样，表情系数采用3DDFA生成，基于感知的patch loss，cuda ray加速等，在实验数据集上效果和速度得到一定提升
