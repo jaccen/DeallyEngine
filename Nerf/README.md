@@ -64,7 +64,7 @@ NeRF in the Dark (RawNeRF)
 
 论文链接：https://arxiv.org/abs/2111.13679
 
-# 
+# 7、人脸重建
 
 #nerf人脸重建：
 1、MobileR2L算法论文(论文链接参考)，
@@ -75,3 +75,5 @@ https://snap-research.github.io/MobileR2L/
 5、基于Mesh人脸重建
       腾讯hifi3d算法：配置环境，用论文中数据集跑通代码流程，运行了人脸重建，基本达到论文中所提效果
       基于instant-ngp和blendshape表情系数的人脸重建算法，并进行若干改进调优：基于概率的光线采样，表情系数采用3DDFA生成，基于感知的patch loss，cuda ray加速等，在实验数据集上效果和速度得到一定提升
+      
+
