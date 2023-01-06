@@ -1193,3 +1193,6 @@ Other.....
 
 ## Visualization
 * [VTK](https://www.vtk.org/) The Visualization Toolkit
+
+##CG&CV Book
+  [CG&CV](https://github.com/jaccen/CG-CV-File) 
