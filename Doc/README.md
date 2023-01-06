@@ -1196,8 +1196,8 @@ Other.....
 ## Visualization
 * [VTK](https://www.vtk.org/) The Visualization Toolkit
   
-###OpenGL
-  [learnOpengl](https://learnopengl.com/)
+## OpenGL
+* [learnOpengl](https://learnopengl.com/)
   
-###CG&CV Book
-  [CG&CV](https://github.com/jaccen/CG-CV-File) 
+## CG&CV Book
+* [CG&CV](https://github.com/jaccen/CG-CV-File) 
