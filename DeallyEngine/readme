@@ -1,4 +1,12 @@
-#Compile
+# 平台特性
+
+  跨平台，支持 Android，IOS，Linux，maxOS，Windows
+  提供 C++，Java，JavaScript API
+  底层图形库支持 OpenGL 4.1+，OpenGL ES 3.0+，Metal，Vulkan 1.0，WebGL 2.0
+
+# Compile
+
+  
   1)windows
   
   
