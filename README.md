@@ -35,6 +35,7 @@
 9、Tools &Editor
 
 10、About Metaverse 
+
     1）Avatars
        
        https://github.com/exokitxr/avatars
@@ -46,7 +47,9 @@
        
        VRoid - Lets you create anime-styled 3D avatars that export to the highly-compatible .vrm format.
        https://vroid.com/en
+       
     2）
+    
     3）
 
 感兴趣的可以联系: jaccen2007@163.com
