@@ -1,6 +1,6 @@
 目标：
   打造一个元宇宙平台，包括渲染引擎、神经渲染、三维重构、SLAM、XR等模块，所有模块采用统一接口方式，支持python或者Lua脚本。
-
+  build a MetaVerse platform。
 # DeallyEngine
 目录结构如下
 
@@ -28,7 +28,29 @@
 
 6、Nerf  神经渲染相关
 
+7、XR
 
+8、SLAM
+
+9、Tools &Editor
+
+10、About Metaverse 
+
+    1）Avatars
+       
+       https://github.com/exokitxr/avatars
+       Resources for creating and utilizing 3D avatars in immersive experiences.
+       Exokit Avatars - A web-based avatar system that can load humanoid avatars in multiple different model formats and features arm+leg IK, facial animation via   visemes, and more. The original repo is no longer maintained, but there is a more up-to-date fork available here.
+       
+       ReadyPlayerMe - Lets you quickly and easily create a 3D avatar online that you can download in glTF format.
+       https://readyplayer.me/
+       
+       VRoid - Lets you create anime-styled 3D avatars that export to the highly-compatible .vrm format.
+       https://vroid.com/en
+       
+    2）
+    
+    3）
 
 感兴趣的可以联系: jaccen2007@163.com
 
