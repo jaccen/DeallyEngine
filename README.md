@@ -4,6 +4,9 @@
 # DeallyEngine
 <img src="https://github.com/jaccen/DeallyEngine/blob/master/DeallyEngine/%E6%B8%B2%E6%9F%93%E5%BC%95%E6%93%8EBS.gif" alt="show" />
 
+<img src="https://github.com/jaccen/DeallyEngine/blob/master/DeallyEngine/apple.gif" alt="show" />
+<img src="https://github.com/jaccen/DeallyEngine/blob/master/DeallyEngine/apple.png" alt="show" />
+
 
 目录结构如下
 
