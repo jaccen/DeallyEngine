@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\RenderEngine\DeallyEngine\OpenGLSamples\lib\glfw\tests\empty.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\RenderEngine\DeallyEngine\OpenGLSamples\lib\glfw\deps\tinycthread.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\RenderEngine\DeallyEngine\OpenGLSamples\lib\glfw\deps\glad.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\RenderEngine\DeallyEngine\OpenGLSamples\lib\glfw\deps\tinycthread.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\RenderEngine\DeallyEngine\OpenGLSamples\lib\glfw\deps\glad\glad.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\RenderEngine\DeallyEngine\OpenGLSamples\lib\glfw\tests\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{2EA5450D-4590-375A-B533-0A5F419DAE53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{59E8B13B-8FFE-3D04-B030-0133269BF73D}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

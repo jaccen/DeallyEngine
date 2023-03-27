@@ -1,0 +1,10 @@
+# CMake generation dependency list for this directory.
+D:/Program Files/CMake/share/cmake-3.26/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in
+D:/Program Files/CMake/share/cmake-3.26/Modules/CMakeParseArguments.cmake
+D:/Program Files/CMake/share/cmake-3.26/Modules/WriteBasicConfigVersionFile.cmake
+E:/RenderEngine/DeallyEngine/OpenGLSamples/lib/glm/CMakeLists.txt
+E:/RenderEngine/DeallyEngine/OpenGLSamples/lib/glm/cmake/CMakePackageConfigHelpers.cmake
+E:/RenderEngine/DeallyEngine/OpenGLSamples/lib/glm/cmake/GNUInstallDirs.cmake
+E:/RenderEngine/DeallyEngine/OpenGLSamples/lib/glm/cmake/glm.pc.in
+E:/RenderEngine/DeallyEngine/OpenGLSamples/lib/glm/cmake/glmBuildConfig.cmake.in
+E:/RenderEngine/DeallyEngine/OpenGLSamples/lib/glm/cmake/glmConfig.cmake.in

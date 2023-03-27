@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\RenderEngine\DeallyEngine\OpenGLSamples\lib\glew\src\glew.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\RenderEngine\DeallyEngine\OpenGLSamples\lib\glew\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="E:\RenderEngine\DeallyEngine\OpenGLSamples\lib\glew\build\glew.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{59E8B13B-8FFE-3D04-B030-0133269BF73D}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
